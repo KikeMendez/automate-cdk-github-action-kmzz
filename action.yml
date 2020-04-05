@@ -6,3 +6,8 @@ runs:
 branding:
   icon: 'cloud'
   color: 'red'
+inputs:
+  cdk_action:
+    description: 'CDK Action ex: bootstrap | diff | deploy'
+    required: true
+    default: 'bootstrap'
