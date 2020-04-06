@@ -1,0 +1,23 @@
+name: Push github action to dockerhub
+on:
+  push:
+    branches: [ master ]
+jobs:
+  push-to-docker-hub:
+    runs-on: ubuntu-latest
+    steps:
+    # Login to docker hub
+    - uses: actions/checkout@v2
+    - name: Login to docker hub
+      run: |
+        docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}} docker.io
+
+    # Build action image
+    - name: Build docker image
+      run: |
+        docker build --tag ${{secrets.DOCKER_USERNAME}}/automate-cdk-github-action-kmzz:v1.0.0 .
+        
+    # Push action image to docker hub
+    - name: Push image to docker hub
+      run: |
+        docker push ${{secrets.DOCKER_USERNAME}}/automate-cdk-github-action-kmzz:v1.0.0
