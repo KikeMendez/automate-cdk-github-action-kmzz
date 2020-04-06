@@ -11,3 +11,7 @@ inputs:
     description: 'CDK Action ex: bootstrap | diff | deploy'
     required: true
     default: 'bootstrap'
+  cdk_version:
+    description: 'AWS CDK version'
+    required: false
+    default: 'latest'
