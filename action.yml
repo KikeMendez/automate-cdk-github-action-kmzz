@@ -5,7 +5,7 @@ runs:
   image: 'Dockerfile'
 branding:
   icon: 'check'
-  color: 'black'
+  color: 'green'
 inputs:
   cdk_version:
     description: 'aws cdk version'
