@@ -4,7 +4,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
 branding:
-  icon: 'tool'
+  icon: 'check'
   color: 'black'
 inputs:
   cdk_version:
