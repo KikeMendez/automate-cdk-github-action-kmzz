@@ -5,7 +5,7 @@
   "repository": "git@github.com:KikeMendez/cdk-github-action-kmzz.git",
   "author": "Enrique Mendez <kikemnzz@gmail.com>",
   "devDependencies": {
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/github": "^7.0.5"
+    "@semantic-release/github": "^7.0.5",
+     "@semantic-release/changelog": "^5.0.1"
   }
 }
