@@ -8,3 +8,4 @@
 out
 gen
 push_event_sample.json
+node_modules
