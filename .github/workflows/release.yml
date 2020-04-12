@@ -10,6 +10,7 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
+      - id: semantic
       - uses: actions/checkout@master
       - uses: actions/setup-node@v1
         with:
@@ -18,3 +19,5 @@ jobs:
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: echo ${{ steps.semantic.outputs.release-version }}
+
