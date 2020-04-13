@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/KikeMendez/cdk-github-action-kmzz/compare/v1.0.0...v1.0.1) (2020-04-13)
+
+
+### Bug Fixes
+
+* test release ([36623f3](https://github.com/KikeMendez/cdk-github-action-kmzz/commit/36623f35bfe39c9df407c999f7a3e7bdeae6ca22))
+
 # 1.0.0 (2020-04-13)
 
 
