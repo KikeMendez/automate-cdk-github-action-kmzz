@@ -1,4 +1,4 @@
-name: Release Automate - CDK
+name: Create Github Release
 
 on:
   push:
@@ -29,4 +29,3 @@ jobs:
           docker build --tag ${{secrets.DOCKER_USERNAME}}/automate-cdk-github-action-kmzz:v${{ steps.semantic.outputs.new_release_version }} .
           docker push ${{secrets.DOCKER_USERNAME}}/automate-cdk-github-action-kmzz:v${{ steps.semantic.outputs.new_release_version }}
           echo ${{ steps.semantic.outputs.new_release_version }}
-          

@@ -1,0 +1,24 @@
+name: Release Automate - CDK
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  tagged-release:
+    name: "Release Automate CDK"
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - name: "Build & test"
+        run: |
+          echo "Coming soon"
+
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+#          files: |
+#            LICENSE.txt
+#            *.jar
