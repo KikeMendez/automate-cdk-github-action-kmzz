@@ -29,13 +29,3 @@ jobs:
           docker build --tag ${{secrets.DOCKER_USERNAME}}/automate-cdk-github-action-kmzz:v${{ steps.semantic.outputs.new_release_version }} .
           docker push ${{secrets.DOCKER_USERNAME}}/automate-cdk-github-action-kmzz:v${{ steps.semantic.outputs.new_release_version }}
           echo ${{ steps.semantic.outputs.new_release_version }}
-
-  release-automate-cdk:
-    needs: [release]
-    runs-on: ubuntu-latest
-    steps:
-      - name: release automate cdk to github marketplace
-        uses: marvinpinto/action-automatic-releases@latest
-          with:
-            repo_token: "${{ secrets.GITHUB_TOKEN }}"
-            prerelease: false
