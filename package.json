@@ -1,0 +1,12 @@
+{
+  "name": "cdk-github-action-kmzz",
+  "version": "0.0.0",
+  "description": "A github action to manage your aws infrastructure by using aws cdk",
+  "repository": "git@github.com:KikeMendez/cdk-github-action-kmzz.git",
+  "author": "Enrique Mendez <kikemnzz@gmail.com>",
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.0.5"
+  }
+}
