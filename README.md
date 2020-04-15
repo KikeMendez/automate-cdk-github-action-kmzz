@@ -40,7 +40,7 @@ Check image versions available here: https://hub.docker.com/r/kikemnzz/automate-
 
 
 
-## Deploy All Example
+## Deploy All
 Make sure the first step is building your application
 ```yaml
 jobs:
